@@ -270,7 +270,7 @@ int main(){
 
             if(a==gob_num){
             printf("\n\nEnter Doctor SI No.\n");
-            printf("   \t1. Nasim Khan\n   \t2. Shubrata Basu\n   \t3. Nandani Roy\n   \t4.Probir Das\n");
+            printf("   \t1. Nasim Khan\n   \t2. Shubrata Basu\n   \t3. Nandani Roy\n   \t4. Probir Das\n");
 
               if(doc_head!=NULL){
                   doc_display();
@@ -350,5 +350,4 @@ int main(){
    }
    return 0;
 }
-
 
