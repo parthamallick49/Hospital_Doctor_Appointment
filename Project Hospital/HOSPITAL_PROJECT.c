@@ -199,31 +199,30 @@ int checkDocFree(int n){
     temp = head;
 
     int i=1;
-    while(i<=4){
-        if(i!=n){
-             temp=temp->next;
-        }
-        else if(i==n && strcmp(temp->name,"----")==0){
-            printf("\n\tYour Doctor Free. You can make an Appointment :)\n\n");
-            return -1;
-        }
-        i++;
+    for(int i=1;i<n;i++){
+        temp = temp->next;
     }
-    printf("\n\tSorry!! Your Doctor is not Free Now. :(\n\n");
-    return -2;
+
+    if(strcmp(temp->name,"----")==0){
+        printf("\n\tYour Doctor Free. You can make an Appointment :)\n\n");
+    }else{
+       printf("\n\tSorry!! Your Doctor is not Free Now. :(\n\n");
+    }
 }
 
 int checkfree(int n){
-    doctor *temp;
-    temp = doc_head;
+    info *temp;
+    temp = head;
+    for(int i=1;i<n;i++){
+        temp = temp->next;
+    }
 
-    for(int i=5;i<=n;i++){
-        if(i!=n){
-            temp= temp->next;
-        }else if(i==n && temp!=NULL){
-            printf("\n\tYour Doctor Free. You can make an Appointment :)\n\n");
-            return -1;
-        }
+    if(strcmp(temp->name,"----")==0){
+        printf("\n\tYour Doctor Free. You can make an Appointment :)\n\n");
+        return -1;
+    }
+    else{
+        temp = temp->next;
     }
     printf("\n\tSorry!! Your Doctor is not Free Now. :(\n\n");
     return -2;
