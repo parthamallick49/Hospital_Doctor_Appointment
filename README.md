@@ -12,6 +12,6 @@ And also can Clear all of them
 
 As a Authority You can Appoint New Doctors in the Hospital.
 
-## PassWord -- 1234
+#### PassWord -- 1234
 
 So, That's All.
